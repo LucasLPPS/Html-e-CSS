@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1> <!--Para criar hiperlinks, usar a tag a. Porém, quando o usuário clicar no link, a página será aberta sobrepondo seu site. O indicado é que ele abra em uma nova aba, para não retirar o usuário do seu site. Para isso, colocar o parâmetro target="_blank" rel="external". Para rel="nofollow", estou dizendo para o mecanismo de busca que a próxima página não tem relação com sua, que não tem seu aval. Para target="_self", ele irá abrir sobrepondo a mesma página, funciona como seu deixasse de colocar o parâmetro -->
+    <p>Você pode acessar meu <a href="https://github.com/LucasLPPS" target="_blank" rel="external">repositório no GitHub</a></p>
+    <h1>Usando links internos</h1><!--O link interno faz relação com uma outra página que está dentro do meu servidor-->
+    <p>Esta é a página principal do meu site, para acessar a primeira página secundária, clique <a href="pag001.html" rel="next" target="_self">aqui</a></p><!--A única coisa que se deve ter atenção é para deixar as páginas na mesma pasta do projeto-->
+    <!--Nesse caso também pode e deve ser usado a expressão rel="next". Estou criando uma associação para navegação do usuário-->
+    <p>Você tbm pode acessar a nossa página de <a href="noticias/pag002.html" rel="next" target="_self">notícias</a></p>
+    <h1>Links para dowload</h1>
+        <ul>
+            <!--Para fazer o download, ao invés de abrir em outra página, colocar os parâmetros download="imagem.jpg" type="media type"-->
+            <li><a href="imagem/imagem.jpg" download="imagem.jpg">Imagem</a></li>
+        </ul>
+</body>
+</html>
