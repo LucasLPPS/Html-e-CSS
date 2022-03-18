@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte/Pré formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em liguagem JavaScript.</p> <!--PAra situações em que seja necessário tornar melhor a leitura dos caracteres, usa-se a tag code-->
+    <p>Um exemplo de código pyhton:</p>
+    <pre>
+        <code> <!--Apesar de tornar a fonte como própria de código de programação, a tag code não mostra de forma identada o texto que coloco (da mesma forma que digitei), logo usar a tag code dentro da tag pre-->
+    <!--Atenção para a tabulação, que considera os espaços que estão presentes no texto, então caso queira recuar o texto, selecionar e clicar shift+tab, caso queira avançar, selecionar e clicar tab-->
+    num = int(input('Digite um número:'))
+    if num%2 == 0:
+        print('O número é par.')
+    else:
+        print('O número é ímpar.')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+    <!--Para indicar citação, usar a tag q, que adiciona aspas ao texto-->
+    <h2>Citações completas</h2>
+    <p>Segundo a NBR 10520:</p>
+    <!--A tag blockquote é usada para escrever citações dentro do texto, que irá aparecer de forma deslocada para direita-->
+    <blockquote cite="https://www.significados.com.br/citacao/#:~:text=Cita%C3%A7%C3%A3o%20%C3%A9%20o%20substantivo%20feminino,autor%20deve%20sempre%20ser%20identificado."> <!--O paramêtro cite é usado para identificar de onde veio o texto, não muda nada na minha página web, porém os mecanismos de pesquisas irão identificar de onde foi retirado aquele trecho citado-->
+        Citação direta: é a transcrição literal de um texto. Quando o tamanho não passa das três linhas, a citação deve estar entre aspas duplas. Caso contrário, a citação deve estar destacada, sendo apresentada com um recuo de 4 cm em relação à margem esquerda, sem aspas e com menor tamanho de letra;
+    </blockquote>
+    <h2>Abreviações</h2> <!--Usar a tag abbr para dar o significado de uma abreviação, que será mostrada quando o usuário passar o cursor do mouse por cima da sigla-->
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Exemplo de texto invertido.</bdo></p> <!--Na prática não existe muito uso-->
+</body>
+</html>
