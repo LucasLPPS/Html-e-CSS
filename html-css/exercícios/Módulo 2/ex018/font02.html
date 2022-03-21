@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        /*Para colocar uma fonte externa, usar a estrutura:*/
+        @font-face {
+            font-family: 'ring';
+            src: url('RINGM___.TTF') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*
+            Tipos de format():
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple advanced Typography)
+            - svg
+            */
+        }
+        body {
+            font-family: ring;
+        }
+        h1 {
+            font-family: 'ring';
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quam sit exercitationem sint, recusandae neque in ipsa nisi perspiciatis. Eaque neque quae earum doloribus repellat dolore nobis repudiandae in libero?</p>
+</body>
+</html>
