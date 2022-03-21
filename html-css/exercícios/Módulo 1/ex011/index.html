@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+    <picture><!--A tag picture pode ser utilizada para garantir configurações adicionais as imagens que coloco no site-->
+        <!--A tag source faz com que se a tela do usuário for menor que 1000px, que é o tamanho da imagem, ele irá carregar a imagem de tamanho menor que estarei definindo-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <!--A lógica aqui é usar imagens que se adaptem ao tamanho da tela do usuário.-->
+    <!--Atenção também para a ordem das chamadas das tag source, que devem ser da menor pra maior nesse caso-->
+    <h1>Reprodução de áudio</h1>
+    <p>Áudio em HTML5:</p>
+    <!--Existem duas formas de reproduzir um áudio:-->
+    <!--Primeira forma:-->
+    <audio src="mídia/crystal-oasis.mp3" controls></audio><!--Se eu colocar apenas a tag padrão, não irá tocar automaticamente, devo colocar o parâmetro controls autoplay-->
+    <!--Segunda Forma:-->
+    <audio preload="auto" controls autoplay> <!--PAra esse segundo caso, adicionar também o parâmetro preload="auto"-->
+        <source src="mídia/crystal-oasis.mp3" type="audio/mpeg"><!--Nesse caso, irei usar a tag source dentro da tag audio-->
+        <!--Aqui continuaria colocando os outros formatos disponíveis usando a tag source, já que na prática, alguns navegadores não tem compatibilidade total com alguns tipos de arquivos de áudio. A mesma lógica serve para vídeos.-->
+        <p>Seu navegador não tem compatibilidade com reprodução de áudios.</p>
+    </audio>
+    <!--Essa estrutura de utilização da tag audio e internamente source me permite colocar diversos tipos de formato do mesmo arquivo, e só irá apenas ser reproduzido aquele suportado pelo navegador do usuário. Caso passe por todas as solicitações de formatos e não consiga reproduzir nenhum, irá pra útlima linha interna, que é o parágrafo com a mensagem de que não é possível reproduzir áudio-->
+
+</body>
+</html>

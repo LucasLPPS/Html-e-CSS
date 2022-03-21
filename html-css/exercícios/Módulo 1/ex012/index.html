@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rpredução de vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Reprodzindo vídeo hospedado localmente</h1>
+    <p>Veja o vídeo abaixo:</p>
+    <video src="mídia/video.mp4" width="400" controls></video><!--Segue a mesma lógica da tag audio, porém ter atenção que nem sempre o usuário gosta de vídeos ou músicas tocando automaticamente, então coloca o parâmetro controls, para mostrar o player, porém retirar a tag autoplay-->
+    <!--Adicionando o parâmetro width="" eu especifico o tamanho que irá ser mostrado o vídeo, porém obviamente não mudo o tamanho do arquivo original-->
+    <video width="400" poster="mídia/barco.jpg" controls loop>
+        <source src="mídia/video.mp4" type="video/mp4">
+        <!--Adicionaria os outros formatos de vídeo disponíveis-->
+        <p>Seu navegador não é compatível com reprodução de vídeos.</p>
+    </video>
+    <h1>Reprodzindo vídeo hospedado do youtube</h1>
+    <!--Para reproduzir vídeos do youtube por exemplo, usar a opção compartilhar e incoporar do próprio youtube, que ele irá gerar o código automaticamente, depois basta colar o código-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9rZKhGrQ1wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--Atenção que alguns vídeos com direitos autorais não permitem a visualização dentro do site. O vídeo aparece, mas só permite a visualização no próprio youtube-->
+</body>
+</html>
