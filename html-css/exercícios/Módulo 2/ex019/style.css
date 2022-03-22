@@ -1,0 +1,33 @@
+@charset "UTF-8";
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Se eu fizer uma mudança no h1 ou h2 vai valer pra todos, porém posso mudar isoladamente algum deles através da criação de id. Porém por documento só posso ter apenas uma chamada de id. Caso eu precise mudar isoladamente mais de um elemento, nesse caso uso class.
+obs:
+em HTML é id = em CSS é # (só pode um elemento)
+em HTML é class = em CSS é . (podem vários elementos)
+*/
+h1#principal {
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+h1 {
+    color: blue;
+}
+h2 {
+    color: rgb(104, 104, 216);
+}
+.básico {
+    color: rgb(78, 212, 78);
+}
+.intermediário {
+    color: green;
+}
+.avançado {
+    color: rgb(5, 56, 5);
+}
+.destaque {
+    background-color: blueviolet;
+}

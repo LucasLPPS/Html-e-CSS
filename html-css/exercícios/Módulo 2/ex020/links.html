@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        /*Configuração para quando houver o clique do mouse*/
+        a:active {
+            color: blueviolet;
+        }
+        .especial {
+            background-color: aquamarine;
+        }
+        /*Elemento que irá ficar antes do link criado*/
+        .especial::before {
+            content: '↠';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey; 
+        }
+        /*Elemento que irá ficar depois do link criado*/
+        .especial::after {
+            content: '↞';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/LucasLPPS" target="_blank" rel="external" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/lucas-pereira-334155182/" target="_blank" rel="external">Página Linkedin</a></li>
+        <li><a href="https://www.twitch.tv/" target="_blank" rel="external">Página Twitch</a></li>
+    </ul>
+</body>
+</html>
